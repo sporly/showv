@@ -1,0 +1,25 @@
+.login-wrap{
+	width: 526px;
+	height: 394px;
+	display: block;
+	background: url(../img/form.png) no-repeat;
+	background-size: 100% 100%;
+}
+.login-wrap{
+	right: -40px;
+	top:12%;
+	margin-top:13%;
+}
+.xvzb-login{
+	left: 39px;
+	top:46px;
+}
+.login{
+	line-height: 54px;
+}
+div.holder a.jp-previous,div.holder a.jp-next {
+  	font-size: 12px;
+  	 }
+  	 .table-content tr td{
+  	 }
+

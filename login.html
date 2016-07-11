@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登录</title>
+    <link rel="stylesheet" href="css/css.css">
+    <!--[if IE 8]><link rel="stylesheet" href="css/ie8.css"><![endif]-->
+    <script src="js/jquery.js" type="text/javascript" charset="utf-8"></script>
+</head>
+<body>
+<!-- xvzb-content begin-->
+<div class="xvzb-content xvlogin-content">
+    <!-- xvzb-top begin-->
+    <div class="xvzb-top">
+        <div class="xvzb-topbox clearfix">
+           <div class="xvzb-logo"><a href="#"> <img src="img/logo.png" ></a></div>
+        </div>
+    </div>
+    <!-- xvzb-top end-->
+    <!-- xvzb-centre begin-->
+    <div class="xvzb-centre">
+    	<div class="xvpic"><img src="img/pic.png"></div>
+       <div class="login-wrap">
+	        <div class="xvzb-login">
+	            <form class="login-form">
+	                <div class="login">秀V会员登录</div>
+	                <div class="login-box">
+	                    <div class="xvzb-logininput">
+	                        <label class="loginphone xvzb-account"></label>
+	                        <input id="loginname" type="text" class="xvzb-itxt" name="loginname" tabindex="1" autocomplete="off" placeholder="请输入登录账号">
+	                    </div>
+	                    <div class="xvzb-logininput">
+	                        <label class="loginphone xvzb-password"></label>
+	                        <input id="nloginpwd" type="password" name="nloginpwd" class="xvzb-itxt itxt-error" tabindex="2" autocomplete="off" placeholder="请输入登录密码">
+	                    </div>
+	                        <div class="login-btn">立即登录 </div>
+	
+	                </div>
+	            </form>
+	        </div>
+	       </div>
+    <!-- xvzb-centre end-->
+    <!-- xvzb-footer begin-->
+    <div class="xvzb-footer">
+        <p>中盾商城  © 版权所有 粤ICP备05008892号</p>
+    </div>
+    <!-- xvzb-footer end-->
+</div>
+<!-- xvzb-content end-->
+<script type="text/javascript">
+	$(function(){
+		if(!placeholderSupport()){   // 判断浏览器是否支持 placeholder
+		    $('#loginname').focus(function() {
+		        var input = $(this);
+		        if (input.val() == input.attr('placeholder')) {
+		            input.val('');
+		            input.removeClass('placeholder');
+		        }
+		    }).blur(function() {
+		        var input = $(this);
+		        if (input.val() == '' || input.val() == input.attr('placeholder')) {
+		            input.addClass('placeholder');
+		            input.val(input.attr('placeholder'));
+		        }
+		    }).blur();
+		};
+	})
+function placeholderSupport() {
+    return 'placeholder' in document.createElement('input');
+}
+</script>
+</body>
+</html>
